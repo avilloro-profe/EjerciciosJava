@@ -17,6 +17,7 @@ public class EjemploCSV {
 		System.out.println(lineas[0]);
 		String[] elementosCabecera = lineas[0].split(",");
 		
+
 		for (int i = 1; i < lineas.length; i++) {
 			System.out.println("linea " + i);
 			for (int j = 0; j < elementosCabecera.length; j++) {
@@ -24,13 +25,6 @@ public class EjemploCSV {
 				System.out.println(elementosCabecera[j].replace("\n","").replace("\r", "")+ ": " + elementosLinea[j]);
 			}
 		}
-		
-		
-		
-		
-		
-
-		
 	}
 
 }
