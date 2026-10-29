@@ -1,0 +1,27 @@
+# Carpetas de compilación y metadatos de Eclipse
+**/bin/
+**/.metadata/
+**/.settings/
+**/.recommenders/
+
+# Archivos de configuración de proyecto
+**/.classpath
+**/.project
+**/.factorypath
+
+# Basura de Javadoc o reportes web generados por Eclipse
+**/doc/
+**/javadoc/
+**/*.css
+**/*.js
+**/org.eclipse.*
+
+# Archivos pesados compilados de Java
+**/*.class
+
+# Archivos temporales del sistema
+**.DS_Store
+Thumbs.db
+
+# .gitignore de los subproyectos
+/*/.gitignore
