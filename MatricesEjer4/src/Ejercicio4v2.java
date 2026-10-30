@@ -24,12 +24,12 @@ public class Ejercicio4v2 {
 				// El valor i representa al alumno i+1
 				// El valor j representa la nota (j+1)º del alumno
 				if(alumno[j] > mayor) {
-					mayor = notas[i][j];
+					mayor = alumno[j];
 				}
 				if(alumno[j] < menor) {
-					menor = notas[i][j];
+					menor = alumno[j];
 				} 
-				suma += notas[i][j];
+				suma += alumno[j];
 			} 
 			
 			// ya he procesado notas[i], que es el alumno i+1
