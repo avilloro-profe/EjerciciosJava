@@ -1,3 +1,13 @@
+/**
+ * Ejemplos de conversión entre números enteros y caracteres utilizando la conversión 
+ * de enteros a caracteres: (int) caracter (ej: (int) 'a' ) y la conversión de
+ * caracteres a enteros: (char) entero (ej: (char) 100 )
+ * 
+ * Recordar que la conversión de caracteres a enteros tiene que ver con la tabla ASCII y que 
+ * cada caracter devuelve un valor entre 0 y 127, del mimso modo que solo convertiremos valores
+ * enteros entre 0 y 127 a caracteres
+ */
+
 import java.util.Scanner;
 
 public class EjemploCharToInt {
@@ -15,9 +25,6 @@ public class EjemploCharToInt {
 			System.out.println("La letra mayúscula de " + caracter + " es: "
 					+ (char)((int)caracter - ((int)'a' - (int) 'A')));
 		}
-
-		
-		
 		
 		
 		teclado.close();

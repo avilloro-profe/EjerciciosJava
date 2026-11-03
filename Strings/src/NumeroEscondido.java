@@ -1,7 +1,13 @@
-
+/**
+ * Ejercicio en el que el usuario debe encontrar un número entero en una frase
+ * El número aparecerá como una palabra en una frase, y todos los elementos de la palabra deben ser 
+ * números. 
+ * Ejemplo: "El 1número 22 está escondi2 aquí" debe devolver: 
+ * 	22 ( nunca "1numero" ni "escondid2" aunque contengan números)
+ */
 public class NumeroEscondido {
 	public static void main(String[] args) {
-		String frase = "El numero 22 está escondi2 aquí";
+		String frase = "El 1numero 22 está escondi2 aquí";
 		String[] palabras = frase.split(" ");
 		boolean esNumero = true; 
 		int numero=0; 
