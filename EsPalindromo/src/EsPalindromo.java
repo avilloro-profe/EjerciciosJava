@@ -7,16 +7,20 @@
  */
 public class EsPalindromo {
 	public static void main(String[] args) {
-		String frase = "Dabale arroz a la zorra el Abad".replaceAll(" ",""); 
-		String alReves = new StringBuilder(frase).reverse().toString().replaceAll(" ","");
+		String frase = "Dabale arroz a la zorra el abad".replaceAll(" ","").toUpperCase(); 
+		boolean esPalindromo = true;  
 		
-		if(frase.compareToIgnoreCase(alReves)==0) {
-			System.out.println("Es palíndromo");
-		}else {
-			System.out.println("no es palíndromo");
+		for (int i = 0; i < frase.length()/2; i++) {
+			if(frase.charAt(i) != frase.charAt(frase.length()-1-i)) {
+				esPalindromo = false; 
+			}
 		}
 		
-		
+		if(esPalindromo) {
+			System.out.println("Es palíndromo");
+		}else {
+			System.out.println("No es palíndromo");
+		}
 	}
 
 }
