@@ -1,16 +1,17 @@
-import java.util.Random;
+import java.util.Arrays;
 
 public class TestStrings {
-
 	public static void main(String[] args) {
-		Random r = new Random();
+		int a=2,b=7, c = 5;
+		int mayor ; 
 		
-		System.out.println(Math.random());
+	
+
+		mayor = (a > b) ? ( (a > c) ? a : c)  :  b;
 		
-		for (int i = 0; i < 10; i++) {
-			System.out.println(r.nextInt(10));
-			
-		}
+		System.out.println(mayor);
+		
+		
 	}
 
 }
