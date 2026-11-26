@@ -47,6 +47,17 @@ public class Ejercicio1_funciones {
 	
 	//TODO: Crear  las funciones divideEnPalabras, creaPares
 	// calculaMedia, cuentaVocales
+	
+	/**
+	 * Dado un String que es una frase, devuelve un array de Strings que 
+	 * representan las palabras de la frase
+	 * @param frase Representa la frase
+	 * @return Las palabras del string
+	 */
+	public static String[] divideEnPalabras(String frase) {
+		return frase.split(" ");
+	}
+	
 
     /**
      * Punto de entrada del ejercicio.
@@ -66,7 +77,8 @@ public class Ejercicio1_funciones {
         
         
 
-        // TODO 1: Crea una función que divide la frase y almacena todas las palabras en un String[].
+        // TODO 1: Crea una función que divide la frase y almacena todas las 
+        // palabras en un String[].
         palabras = divideEnPalabras(frase);
         
      // TODO 2: Crea una funcioón que devuelva un array de strings palabras longitud par
