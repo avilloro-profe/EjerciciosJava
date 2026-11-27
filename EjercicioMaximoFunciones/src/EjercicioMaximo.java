@@ -16,7 +16,7 @@ public class EjercicioMaximo {
 		//TODO: Pedir valores a , b y c
 		
 		//TODO: Asignar a maximo el valor máximo entre a y b (utilizando la función creada)
-//		maximo = ...
+//		maximo = --> Utilizar la función
 		
 //		TODO 2: Mostrar el valor máximo de a b y c (utilizando la función creada)
 		

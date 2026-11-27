@@ -4,22 +4,29 @@ import java.util.Scanner;
 /**
  * Ejercicio 1. Análisis de una frase (3 puntos).
  *
- * <p>Escribe un programa que pida una frase al usuario y:</p>
+ * <p>
+ * Escribe un programa que pida una frase al usuario y:
+ * </p>
  * <ol>
- *   <li>Divida la frase en palabras y las almacene en un array de String.</li>
- *   <li>Cree otro array con las palabras de longitud par, en el mismo orden.</li>
- *   <li>Muestre el total de palabras, el total de palabras de longitud par
- *       y la longitud media de todas las palabras.</li>
- *   <li>Cuente y muestre el número total de vocales de la frase.</li>
- *   <li>Muestre las palabras de longitud par, una por línea.</li>
+ * <li>Divida la frase en palabras y las almacene en un array de String.</li>
+ * <li>Cree otro array con las palabras de longitud par, en el mismo orden.</li>
+ * <li>Muestre el total de palabras, el total de palabras de longitud par y la
+ * longitud media de todas las palabras.</li>
+ * <li>Cuente y muestre el número total de vocales de la frase.</li>
+ * <li>Muestre las palabras de longitud par, una por línea.</li>
  * </ol>
  *
- * <p>La frase contiene al menos una palabra, no tiene espacios iniciales
- * ni finales y hay exactamente un espacio entre palabras. Se cuentan
- * las vocales tanto en mayúsculas como en minúsculas. En el ejemplo,
- * las vocales con tilde también se consideran vocales.</p>
+ * <p>
+ * La frase contiene al menos una palabra, no tiene espacios iniciales ni
+ * finales y hay exactamente un espacio entre palabras. Se cuentan las vocales
+ * tanto en mayúsculas como en minúsculas. En el ejemplo, las vocales con tilde
+ * también se consideran vocales.
+ * </p>
  *
- * <p>Ejemplo de ejecución:</p>
+ * <p>
+ * Ejemplo de ejecución:
+ * </p>
+ * 
  * <pre>
  * Introduce una frase:
  * La programación requiere práctica y paciencia
@@ -36,30 +43,48 @@ import java.util.Scanner;
  * práctica
  * </pre>
  *
- * <p>La media se calcula sobre todas las palabras. Se admite presentarla
- * con más decimales.</p>
+ * <p>
+ * La media se calcula sobre todas las palabras. Se admite presentarla con más
+ * decimales.
+ * </p>
  *
  * @author CPIFP Bajo Aragón - 0485 Programación
  */
 public class Ejercicio1_funciones {
-	
-	
-	
-	//TODO: Crear  las funciones divideEnPalabras, creaPares
+
+	// TODO: Crear las funciones divideEnPalabras, creaPares
 	// calculaMedia, cuentaVocales
-	
+
 	/**
-	 * Dado un String que es una frase, devuelve un array de Strings que 
-	 * representan las palabras de la frase
+	 * Dado un String que es una frase, devuelve un array de Strings que representan
+	 * las palabras de la frase
+	 * 
 	 * @param frase Representa la frase
 	 * @return Las palabras del string
 	 */
 	public static String[] divideEnPalabras(String frase) {
 		return frase.split(" ");
 	}
-	
 
-    /**
+	public static String[] creaPares(String[] palabras) {
+		String[] devolver = null;
+
+		// 1. Necesito conocer el tamaño del array
+		for (int j = 0; j < palabras.length; j++) {
+			// No se como hacerlo, pero par es que tenga
+			// longitud par, ó %2 ==0
+		}
+
+		// 2. Necesito rellenar el array
+		for (int j = 0; j < palabras.length; j++) {
+			// No sé como hacerlo
+		}
+
+		return devolver;
+
+	}
+
+	/**
      * Punto de entrada del ejercicio.
      *
      * @param args argumentos de consola (no se utilizan)
@@ -81,7 +106,7 @@ public class Ejercicio1_funciones {
         // palabras en un String[].
         palabras = divideEnPalabras(frase);
         
-     // TODO 2: Crea una funcioón que devuelva un array de strings palabras longitud par
+     // TODO 2: Crea una función que devuelva un array de strings palabras longitud par
         // Cuento palabras
         
         palabrasPares = creaPares(palabras);
@@ -115,4 +140,3 @@ public class Ejercicio1_funciones {
         teclado.close();
     }
 }
-

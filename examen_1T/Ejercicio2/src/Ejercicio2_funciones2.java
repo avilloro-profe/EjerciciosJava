@@ -99,17 +99,47 @@ public class Ejercicio2_funciones2 {
 	public class Ejercicio2 {
 		
 		
-		// TODO 2: Comprueba si TODAS las filas y columnas tienen
-		// exactamente la misma suma.
+		
 		
 		// TODO 2.1: Crea un método que dada una matriz y una fila, devuelva el valor
-		// de los elementos de la fila 
+		// de la suma de los elementos de la fila 
+		public static int sumaFilas(int[][] matriz, int numFila) {
+			return 15;
+		}
 		
 		// TODO 2.2: Crea un método que dada una matriz y una columna, devuelva el valor
-		// de los elementos de la columna 
+		// de la suma de los elementos de la columna 
 		
-		// TODO 3: Crea un método que dada una matriz, compruebe si es mágica
-		// Puedes (debes) usar los métodos creados en 2.1 y 2.2 
+		// TODO 2: Comprueba si TODAS las filas y columnas tienen
+				// exactamente la misma suma.
+		
+		// TODO 3: Crea un método que dada una matriz, compruebe
+		//si es mágica. Puedes (debes) usar los métodos creados 
+		// en 2.1 y 2.2 
+		
+		public static boolean esMagica(int[][] matriz) {
+			// recorrer la matriz por filas y columnas y utilizando el método de 
+			//2.1 y 2.2 y comprobar que las filas y columnas suman lo mismo
+			
+			// Necesito un valor con el que comparar, tomo el de la primera fila
+			int valorMagico = sumaFilas(matriz, 0);
+			
+			
+			// Recorro los posibles valores de filas de la matriz y compruebo
+			// si valen lo mismo que el valorMagico. Si en algún momento no vale lo mismo
+			// puedo asegurar que la matriz no es mágica: -> return false
+			for (int i = 1; i < matriz.length; i++) {
+				if(sumaFilas(matriz, i) != valorMagico) {
+					return false;
+				}
+			}
+			
+			
+			
+			
+			
+			return true; 
+		}
 		
 		
 		// TODO 4.1: Crea un método que dada una matriz, devuelva el valor de su diagonal
